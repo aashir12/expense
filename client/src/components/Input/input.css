@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .inputDiv{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  
+  }
+  .inputDiv >input{
+    font-size: 1.1em; 
+    padding: 0.3em;
+    outline: none;
+    
+  
+  }
+  
+  .inputDiv > button{
+    background: #9F70FD;
+    color: #fff;
+    font-size: 1.1em;  
+    padding: 0.3em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    transition: 0.4s;
+    cursor: pointer;
+  
+   
+  }
+  .inputDiv > button:hover{
+    color: #9F70FD;
+    background: #fff;
+  
+  }
+  
+  @media (width<700px){
+    .inputDiv>button,.inputDiv>input{
+      margin: 10px;
+    }
+    .inputDiv > button{
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+    }
+  
+  
+  }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #9F70FD;
+    font-family: 'Roboto';
+    
+}
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.chartCover{
+    width: 40vw;
+    border-radius: 15px;
+    background: white;
+    margin: auto;
+}
+.chart:nth-child(2){
+    font-weight: bolder;
+    font-size: 1vw;
+    padding: 0.5%;
+    border: 0.3px solid black;
+}
+.chart{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin:0.5vw;
+ 
+}
+.box > button{
+
+    padding:5px;
+    cursor: pointer;
+    margin: auto  0.3vw;
+}
+.box >button{
+    background-color: #9F70FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.45s;
+    border: 1px solid #9F70FD;
+}
+.box > button:hover{
+    background-color: white;
+    color: #7F27FF;
+}
+.total{
+    width: 100%;
+    display: flex;
+}
+.total > h3{
+    margin-left: auto;
+    padding: 40px 60px;
+    color: #7F27FF;
+}
+@media (width<700px){
+    .chartCover{
+        width: 85vw;
+    }
+    .chart:nth-child(1){
+        display: flex;
+      flex-direction:column;
+      padding: 10px;
+      width: 80%;
+      margin: auto;
+    }
+    .chart:nth-child(2){
+
+        font-size: 3.5vw;
+
+    }
+  }
